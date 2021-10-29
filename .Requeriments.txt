@@ -1,3 +1,5 @@
 django
 django-shortcuts
-django-allauth
+pillow
+django-crispy-forms
+##django-allauth
