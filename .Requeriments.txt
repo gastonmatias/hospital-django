@@ -2,4 +2,4 @@ django
 django-shortcuts
 pillow
 django-crispy-forms
-##django-allauth
+pytest
