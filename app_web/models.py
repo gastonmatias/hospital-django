@@ -10,7 +10,7 @@ class Paciente(models.Model):
     fecha_nacimiento = models.DateField('Fecha Nacimiento (dd/mm/aaaa)',null='true',blank=True)
     nacionalidad = models.CharField('Nacionalidad',max_length=25,null='true',blank=True)
     descripcion = models.CharField('Descripcion',max_length=25,null='true',blank=True)
-    nickname = models.CharField('Nickname',max_length=10,null='true',blank=True)
+    nickname = models.CharField('Nickname',max_length=20,null='true',blank=True)
     email = models.EmailField('Correo electronico', unique=True)
     password = models.CharField('Contraseña',max_length = 15)
     telefono = models.CharField('Telefono',max_length = 15)
