@@ -3,8 +3,6 @@ from django.shortcuts import render, get_object_or_404, redirect
 from app_web.forms import PacienteForm
 from app_web.models import Paciente
 from django.contrib import messages
-##from django.views.generic import View
-
 
 # Create your views here.
 def home(request):
@@ -56,7 +54,7 @@ def actualizarPaciente(request, id):
     }
 
     if request.method == 'POST':
-        formulario = PacienteForm(data=request.POST, instance=paciente, files=request.FILES)#se pasa la instancia nuevamente para obtener la id del producto a modificar  
+        formulario = PacienteForm(data=request.POST, instance=paciente, files=request.FILES)#se pasa la instancia nuevamente para obtener la id del pacuente a modificar  
         
         if formulario.is_valid():
             formulario.save()

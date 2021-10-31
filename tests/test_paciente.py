@@ -28,17 +28,16 @@ def test_paciente_creation2():
 
     assert paciente.nombre == 'anakin'
 
-def test_staff_paciente_creation():
-    paciente = Paciente.objects.create(
-        nombre = 'obiwan',
-        apellido =  'kenobi',
-        rut = '1234567',
+    """pacienteRep = Paciente.objects.create(
+        nombre = 'tomas',
+        apellido =  'gonzales',
+        rut = '18456984-7',
+        email = 'paquito@hotmail.com',
         telefono = '+440568456',
         celular = '+4405689456',
-        
     )
-    assert paciente.rut == '1234567'
-
+    assert pacienteRep.email == 'paquito@hotmail.com' """""
+    
 ## Para otorgar permiso de acceso a la bd para testing
 # y de paso fix error:
 # "RuntimeError: Database access not allowed..." al ejecutar "pytest" en terminal
